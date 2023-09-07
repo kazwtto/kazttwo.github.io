@@ -1,0 +1,192 @@
+.container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Estilizando cada tabela */
+.table-container {
+    overflow-x: auto;
+}
+
+/* Estilos para os botões de página */
+#pagination {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%; 
+}
+
+.page-button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.page-button:hover {
+    background-color: #f0f0f0;
+}
+
+.page-button.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Centralize horizontalmente os botões */
+#pagination {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Centralize horizontalmente os botões */
+#pagination {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos adicionais para realce de hover, etc. podem ser adicionados aqui */
+
+
+/* gei font */
+@font-face {
+    font-family: 'Righteous';
+    src: url('font/1.ttf') format('truetype');
+}
+
+
+#thumb img {
+    border-radius: 10px;
+    /* border: 2px solid #000; */
+ }
+ 
+ #dragon_elements img {
+    text-align: center;
+ }
+ 
+ /* Contêiner com rolagem horizontal */
+#tableContainer {
+    margin-top: 50px;
+    overflow-x: auto; /* Adicione rolagem horizontal quando necessário */
+}
+
+#tableList {
+    border-radius: 30px;
+}
+
+/* Estilos para a tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table, th, td {
+    border: 0.5px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#loader {
+    display: none;
+    position: absolute;
+    text-align: center;
+}
+        
+        
+th, td {
+    padding: 8px;
+    text-align: center;
+    font-family: 'Righteous', sans-serif;
+    font-size: 10px;
+}
+
+#footer tr {
+    padding: 8px;
+    text-align: center;
+    font-family: 'Righteous', sans-serif;
+    font-size: 2px;
+    margin-bottom: 2px;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#searchContainer {
+    background: none;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#searchInput {
+    padding: 5px;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+#tableList {
+    margin-top: 50px;
+}
+
+/* Estilo para desktop (largura da tela maior que 768px) */
+@media (min-width: 769px) {
+    #tableList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Organiza as tabelas em 3 colunas */
+        gap: 20px; /* Espaço entre as tabelas */
+    }
+}
+
+/* Estilo para desktop (largura da tela maior que 768px) */
+@media (min-width: 769px) {
+    #tableContainer {
+        display: block; /* Volta ao layout de bloco */
+        overflow-x: hidden; /* Oculta a rolagem horizontal */
+    }
+}
+
+/* Estilize a tela de carregamento */
+.loader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Certifique-se de que a tela de carregamento esteja acima de todos os outros elementos */
+}
+
+/* Estilize o GIF de carregamento */
+.loader img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 100px; /* Ajuste o tamanho conforme necessário */
+}
