@@ -26,13 +26,13 @@
 
        // VAR EXTERNAL.JSON DAAT 
        var MAIN_INFO = new Array()
-       const INFO = await fetch("./files/INFO.json")
+       const INFO = await fetch("./data/INFO.json")
           .then(r => r.json())
 
-       const DATA = await fetch("./files/DATA.json")
+       const DATA = await fetch("./data/DATA.json")
           .then(r => r.json())
 
-       const ELEMENTS = await fetch("./files/ELEMENTS.json")
+       const ELEMENTS = await fetch("./data/ELEMENTS.json")
           .then(r => r.json())
 
        // 
@@ -45,7 +45,7 @@
           arr = arr.map(item => {
              item = item.trim()
              var t = '<img src="%1" style="width: %2%;">'
-                .replace("%1", `elements_${type}/${item}.png`)
+                .replace("%1", `images/${type}/${item}.png`)
                 .replace("%2", size)
              return t;
           })
